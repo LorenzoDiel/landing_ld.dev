@@ -7,7 +7,7 @@ export default function Footer() {
         <div>
           <p className="font-google-sans text-sm text-white/85">LD.dev</p>
           <p className="font-google-sans text-xs text-white/45">
-            Soluciones digitales para PYMES argentinas.
+            Soluciones digitales para PYMES argentinas. <br /><span className="font-google-sans text-xs text-white/25">Propiedad intelectual Diel Lorenzo | CUIT: 20-40072992-2</span>
           </p>
         </div>
 
