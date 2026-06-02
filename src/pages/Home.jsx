@@ -5,10 +5,10 @@ import CardProyectos from "../components/CardProyectos"
 import Cotizador from "../components/Cotizador"
 
 const proyectos = {
-  Transvaal: {
-    title: "Transvaal S.A.",
+  GestionLogistica: {
+    title: "Gestión Logística",
     description: "De Google Sheets a webapp. Liquidaciones, choferes y gestión documental.",
-    link: "/Proyecto Transvaal.pdf",
+    link: "/Proyecto gestion-logistica.pdf",
     stats: ["Logística - MDP", "2026"],
   },
   Fichar: {

@@ -10,6 +10,47 @@ const areas = [
   { name: "Consultoría tecnológica", description: "Asesoramiento experto para optimizar tus proyectos y decisiones tecnológicas." },
 ]
 
+const initialFormState = {
+    empresa: "",
+    rubro: "",
+    nombre: "",
+    email: "",
+    area: "",
+    descripcion: "",
+}
+
+const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return emailRegex.test(email)
+}
+
+const validateForm = (formData) => {
+    const errors = {}
+    if (!formData.empresa.trim()) errors.empresa = "El campo Empresa es obligatorio."
+    if (!formData.rubro.trim()) errors.rubro = "El campo Rubro es obligatorio."
+    if (!formData.nombre.trim()) errors.nombre = "El campo Nombre es obligatorio."
+    if (!formData.email.trim()) {
+        errors.email = "El campo Email es obligatorio."
+    } else if (!validateEmail(formData.email)) {
+        errors.email = "Por favor, ingresa un email válido."
+    }
+    if (!formData.area) errors.area = "Por favor, selecciona un área de interés."
+    if (!formData.descripcion.trim()) errors.descripcion = "El campo Descripción del proyecto es obligatorio."
+    return errors
+}
+
+
+const handleSubmit = (event, formData) => {
+    event.preventDefault()
+    const errors = validateForm(formData)
+    if (Object.keys(errors).length > 0) {
+        // Aquí podrías mostrar los errores al usuario, por ejemplo, usando un estado para almacenar los errores y renderizarlos en el formulario.
+        console.log("Errores de validación:", errors)
+        return
+    }
+    
+    console.log("Formulario válido, enviando datos:", formData)
+}
 export default function Cotizador({ isOpen, onClose }) {
   return (
     <AnimatePresence>
@@ -48,7 +89,7 @@ export default function Cotizador({ isOpen, onClose }) {
               Completá el formulario y nos pondremos en contacto.
             </p>
 
-            <form className="flex flex-col gap-4">
+            <form className="flex flex-col gap-4" onSubmit={(e) => handleSubmit(e, formData)}>
                 <div className="flex flex-row gap-2">
                     <input
                         type="text"
