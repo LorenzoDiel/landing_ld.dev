@@ -7,7 +7,7 @@ export default function Footer() {
         <div>
           <p className="font-google-sans text-sm text-white/85">LD.dev</p>
           <p className="font-google-sans text-xs text-white/45">
-            Soluciones digitales para PYMES argentinas. <br /><span className="font-google-sans text-xs text-white/25">Propiedad intelectual Diel Lorenzo | CUIT: 20-40072992-2</span>
+           Desarrollo de software a medida · Mar del Plata, Argentina <br /><span className="font-google-sans text-xs text-white/25">&copy; Diel Lorenzo | CUIT: 20-40072992-2</span>
           </p>
         </div>
 
@@ -15,7 +15,7 @@ export default function Footer() {
           to="/politicas-de-privacidad"
           className="font-google-sans text-sm text-white/75 underline decoration-white/25 underline-offset-4 transition hover:text-white"
         >
-          Politicas de privacidad
+          Políticas de privacidad
         </Link>
       </div>
     </footer>

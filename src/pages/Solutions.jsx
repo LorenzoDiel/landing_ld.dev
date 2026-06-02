@@ -86,10 +86,9 @@ export default function Solutions() {
     };
 
     return (
-        <section className="relative min-h-screen py-6 md:py-10 flex flex-col items-center justify-center overflow-hidden">
+        <section className="relative flex min-h-[calc(100svh-10rem)] flex-col items-center justify-center overflow-hidden py-0">
             {/* Ambient Background Glows */}
-            <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[150px] pointer-events-none" />
-            <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-[150px] pointer-events-none" />
+
 
             <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 md:px-6 flex flex-col items-center">
                 
@@ -99,22 +98,19 @@ export default function Solutions() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-50px" }}
                     transition={{ duration: 0.6 }}
-                    className="text-center mb-6 md:mb-8 max-w-3xl mx-auto"
+                    className="mx-auto mb-4 max-w-3xl text-center md:mb-5"
                 >
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80 text-xs font-google-sans mb-3 backdrop-blur-sm shadow-xl">
+                    <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 font-google-sans text-xs text-white/80 shadow-xl backdrop-blur-sm">
                         <span className="w-1.5 h-1.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
                         Nuestras Áreas
                     </div>
                     
-                    <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-anton tracking-wide uppercase drop-shadow-md mb-3 leading-tight">
-                        Soluciones para cada parte del <br className="hidden md:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">
-                            crecimiento de tu empresa
-                        </span>
+                    <h2 className="mb-2 font-anton text-2xl leading-tight tracking-wide text-white md:text-3xl lg:text-4xl">
+                    Cinco formas de ayudarte a crecer.
                     </h2>
                     
-                    <p className="text-white/70 text-sm lg:text-base font-google-sans font-light leading-relaxed max-w-2xl mx-auto">
-                        En LD.dev sabemos que las PYMES necesitan herramientas que realmente funcionen. Organizamos nuestras soluciones en cinco pilares clave para acompañarte de forma integral.
+                    <p className="mx-auto max-w-2xl font-google-sans text-sm font-light leading-relaxed text-white/70 lg:text-base">
+                        Desde publicidad hasta sistemas a medida. Dependiendo de en qué etapa está tu negocio, trabajamos en una o en varias a la vez.
                     </p>
                 </motion.div>
 
@@ -124,7 +120,7 @@ export default function Solutions() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-50px" }}
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 lg:gap-5 w-full"
+                    className="grid w-full grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 xl:grid-cols-5"
                 >
                     {solutions.map((solution, index) => (
                         <motion.div 
@@ -138,7 +134,7 @@ export default function Solutions() {
                             <div className="absolute inset-0 bg-white/10 opacity-100 group-hover:opacity-0 transition-opacity duration-300" />
                             
                             {/* Card Content Background */}
-                            <div className="relative h-full bg-[#0a0a0f] rounded-[23px] p-4 lg:p-5 flex flex-col z-10">
+                            <div className="relative z-10 flex h-full flex-col rounded-[23px] bg-[#0a0a0f] p-4">
                                 
                                 {/* Top Section: Icon & Id */}
                                 <div className="flex justify-between items-center mb-3">
@@ -178,18 +174,6 @@ export default function Solutions() {
                     ))}
                 </motion.div>
 
-                {/* Integration Flow Example Text */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 0.4 }}
-                    className="mt-6 md:mt-8 text-center"
-                >
-                    <p className="text-white/50 text-xs md:text-sm font-google-sans max-w-3xl mx-auto italic">
-                        "Las áreas no funcionan aisladas. Forman un ecosistema integrado donde la suma de las partes potencia el crecimiento de tu negocio."
-                    </p>
-                </motion.div>
             </div>
         </section>
     );

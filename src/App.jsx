@@ -1,11 +1,13 @@
 import { Navigate, Route, Routes } from "react-router-dom"
 import Landing from "./layout/Landing"
 import PrivacyPolicy from "./pages/PrivacyPolicy"
+import Projects from "./pages/Projects"
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Landing />} />
+      <Route path="/projects" element={<Projects />} />
       <Route path="/politicas-de-privacidad" element={<PrivacyPolicy />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
