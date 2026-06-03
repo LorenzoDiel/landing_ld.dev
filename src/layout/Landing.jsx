@@ -109,7 +109,7 @@ export default function Landing() {
       <main
         ref={mainRef}
         onWheel={handleWheelSnap}
-        className="relative z-30 h-svh overflow-y-auto scroll-smooth"
+        className="relative z-30 h-svh overflow-y-auto scroll-smooth scrollbar-none"
       >
         <section id="home" className="min-h-svh snap-start">
           <Home />

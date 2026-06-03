@@ -110,7 +110,7 @@ export default function Projects() {
   }, [])
 
   return (
-    <div className="relative flex min-h-[calc(100svh-5rem)] items-center overflow-visible bg-[#0a0a0a] text-white lg:overflow-hidden">
+    <div className="relative flex min-h-[calc(100svh)] items-center overflow-visible bg-[#0a0a0a] text-white lg:overflow-hidden">
       <div
         className="fixed inset-0 z-0"
         style={{
@@ -121,7 +121,7 @@ export default function Projects() {
         }}
       />
 
-      <main className="relative z-30 flex min-h-[calc(100svh-5rem)] w-full flex-col px-4 py-6 md:px-8 lg:h-[calc(100svh-7rem)] lg:min-h-0 lg:px-10 lg:py-0">
+      <main className="relative z-30 flex min-h-[calc(100svh)] w-full flex-col px-4 py-6 md:px-8 lg:h-[calc(100svh-7rem)] lg:min-h-0 lg:px-10 lg:py-0">
 
         {/* Header */}
         <div className="flex flex-col">
@@ -266,20 +266,6 @@ export default function Projects() {
               </button>
               
             ))}
-            <svg
-              className="pointer-events-none absolute right-2.5 top-1/2 hidden -translate-y-1/2 text-white/30 lg:block"
-              xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-              fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
-            >
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-            <svg
-                className="pointer-events-none absolute right-2.5 top-1/2 mt-2 hidden -translate-y-1/2 text-white/30 lg:block"
-                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
-            >
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
           </div>
         </div>
 

@@ -69,7 +69,7 @@ export default function Navbar({ variant = "default" }) {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -8 }}
                     transition={{ duration: 0.2, ease: "easeOut" }}
-                    className="absolute left-0 top-[calc(100%+0.5rem)] flex w-full flex-col gap-2 rounded-3xl border border-white/7 bg-white/[0.07] p-3 shadow-[0_18px_70px_rgba(0,0,0,0.38)] backdrop-blur-2xl backdrop-saturate-100 md:hidden"
+                    className="absolute left-0 top-[calc(100%+0.5rem)] flex w-full flex-col gap-2 rounded-3xl border border-white/10 bg-[#0b0b0b] p-3 shadow-[0_18px_70px_rgba(0,0,0,0.55)] md:hidden"
                 >
                     {navItems.map((item) => (
                         <Link

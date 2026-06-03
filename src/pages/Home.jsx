@@ -23,11 +23,11 @@ export default function Home() {
   const [isCotizadorOpen, setIsCotizadorOpen] = useState(false)
 
   return (
-    <div className="relative z-10 flex min-h-svh flex-col justify-center px-4 pt-12 md:px-10 md:pt-24">
+    <div className="relative z-10 flex min-h-[calc(100svh)] flex-col justify-center px-4 pt-12 md:px-10 md:pt-10 lg:px-20">
       <div className="flex flex-col md:grid grid-cols-[1.5fr_1fr] items-center gap-4 mt-10">
         {/* columna izquierda - hero */}
         <div className="flex flex-col items-center text-center md:items-start md:text-left justify-center">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-2 py-2 md:py-1.5 text-sm text-white/70 backdrop-blur-sm">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-2 md:px-4 py-2 md:py-1.5 text-sm text-white/70 backdrop-blur-sm">
             <span className="h-2 w-2 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
             Desarrollo de software - Mar del Plata, Argentina
           </div>
