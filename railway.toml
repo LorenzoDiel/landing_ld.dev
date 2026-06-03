@@ -1,2 +1,2 @@
 [deploy]
-startCommand = "npx serve dist --single"
+startCommand = "npx serve dist"
