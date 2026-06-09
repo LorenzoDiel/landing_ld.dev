@@ -36,6 +36,7 @@ function NavbarContent({ onNavigate, menuOpen, onToggleMenu }) {
                     whileTap={{ scale: 0.9 }}
                     animate={{ backgroundPosition: "200% 0" }}
                     className="rounded-full border border-white/2 bg-black/30 px-5 py-2 font-google-sans text-sm font-light text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_5px_15px_rgba(0,0,0,0.25)] backdrop-blur-xl transition-colors hover:bg-white/10"
+                    onClick={() => {window.open("https://wa.me/5492236200677?text=Hola%20LD%20!%20Quisiera%20charlar%20sobre%20un%20proyecto.", "_blank")}}
                 >
                     Charlemos
                 </motion.button>

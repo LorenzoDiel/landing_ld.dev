@@ -40,7 +40,7 @@ const sections = [
 
 export default function PrivacyPolicy() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-black px-6 py-24 text-white md:px-10">
+    <main className="relative min-h-screen overflow-hidden bg-black px-2 py-4 text-white md:px-10">
       <div className="absolute inset-0 z-0 bg-black" />
       <div className="absolute left-1/2 top-24 z-10 h-[34rem] w-[34rem] -translate-x-1/2 rounded-full bg-blue-500/12 blur-[120px]" />
       <div className="absolute bottom-0 right-0 z-10 h-[24rem] w-[24rem] rounded-full bg-cyan-400/10 blur-[120px]" />

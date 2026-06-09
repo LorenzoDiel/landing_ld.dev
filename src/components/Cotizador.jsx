@@ -82,14 +82,14 @@ export default function Cotizador({ isOpen, onClose }) {
               X
             </button>
 
-            <h1 id="cotizador-title" className="pr-10 text-2xl font-anton leading-tight tracking-wider text-white">
+            <h1 id="cotizador-title" className="pr-10 text-xl font-anton leading-tight tracking-wider text-white">
               Cotizá tu proyecto
             </h1>
-            <p className="mb-8 mt-4 text-lg font-light leading-relaxed text-white/50">
+            <p className="mb-2 mt-2 text-md font-light leading-relaxed text-white/50">
               Completá el formulario y nos pondremos en contacto.
             </p>
 
-            <form className="flex flex-col gap-4" onSubmit={(e) => handleSubmit(e, formData)}>
+            <form className="flex flex-col gap-2" onSubmit={(e) => handleSubmit(e, formData)}>
                 <div className="flex flex-row gap-2">
                     <input
                         type="text"
